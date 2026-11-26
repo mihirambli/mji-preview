@@ -377,13 +377,17 @@
   loadFrames(pickVariant());
   updateStage(1, 0);
 
+  // Watch the canvas itself, not just the window: it can start at 0 px wide
+  // (page opened in a background tab or hidden frame) without any window resize after.
   let resizeTimer;
-  window.addEventListener("resize", () => {
+  const onResize = () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
       sizeCanvas();
       if (pickVariant() !== variant) loadFrames(pickVariant());
       else draw(true);
     }, 120);
-  });
+  };
+  window.addEventListener("resize", onResize);
+  if ("ResizeObserver" in window) new ResizeObserver(onResize).observe(canvas);
 })();
