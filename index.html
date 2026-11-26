@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MJI Perfumes — Single-Origin Assam Oud, Attars &amp; Perfumes</title>
+  <meta name="description" content="Single-origin oud from the agarwood forests of Golaghat, Assam — grown, distilled and bottled by us. Perfumes from ₹400, alcohol-free attars from ₹300.">
+  <meta name="theme-color" content="#0b0806">
+  <meta name="robots" content="noindex, nofollow"><!-- design preview: keep it out of search results -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="frames/desktop/frame_0001.webp" media="(min-aspect-ratio: 4/5)">
+  <link rel="preload" as="image" href="frames/mobile/frame_0001.webp" media="(max-aspect-ratio: 4/5)">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="in-reel">
+  <a class="skip" href="#shop">Skip to the shop</a>
+
+  <!-- ============ ANNOUNCEMENT + HEADER ============ -->
+  <div class="announce">
+    <span>Free shipping over ₹1,999</span>
+    <span class="announce__dot hide-sm" aria-hidden="true">◆</span>
+    <span class="hide-sm">Ships in 2–3 days</span>
+    <span class="announce__dot hide-sm" aria-hidden="true">◆</span>
+    <span class="hide-sm">QR-verified single-origin oud</span>
+  </div>
+
+  <header class="header">
+    <button class="header__menu" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <a class="header__logo" href="https://www.mjiperfumes.com/" aria-label="MJI Perfumes home">
+      <img src="https://www.mjiperfumes.com/_next/image?url=%2Fbrand%2FScreenshot_2024-02-20_at_4.22.27_PM-removebg-preview.png&amp;w=1080&amp;q=75" alt="MJI Perfumes" width="120" height="40">
+    </a>
+    <nav class="header__nav" id="menu" aria-label="Main">
+      <a href="https://www.mjiperfumes.com/products?category=perfumes">Perfumes</a>
+      <a href="https://www.mjiperfumes.com/collections/attar">Attars</a>
+      <a href="#oud-oil">Oud Oil</a>
+      <a href="https://www.mjiperfumes.com/collections/bakhoor">Bakhoor &amp; Gifts</a>
+      <a href="#discovery">Discovery Set</a>
+      <a href="https://www.mjiperfumes.com/our-story">Our Story</a>
+    </nav>
+    <div class="header__icons">
+      <a href="https://www.mjiperfumes.com/products" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      </a>
+      <a href="https://www.mjiperfumes.com/login" aria-label="Account" class="hide-sm">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+      </a>
+      <button class="header__bag" aria-label="Bag, 0 items">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="header__bag-count" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ 1. HERO: SCROLL REEL ============ -->
+    <section class="reel" id="reel" aria-label="An MJI bottle is filled, sealed and packed as you scroll">
+      <div class="reel__stage">
+        <img class="reel__poster" src="frames/desktop/frame_0001.webp" alt="" aria-hidden="true">
+        <canvas class="reel__canvas" id="reel-canvas" aria-hidden="true"></canvas>
+        <div class="reel__shade" aria-hidden="true"></div>
+
+        <div class="reel__intro is-active" data-stage="intro">
+          <p class="eyebrow">Single-origin oud · Golaghat, Assam</p>
+          <h1>Born in Assam.<br><em>Made for the world.</em></h1>
+          <p class="lede">Grown, distilled and bottled by us. Scroll to watch a bottle come to life.</p>
+          <div class="reel__ctas">
+            <a class="btn btn--solid" href="#shop">Shop bestsellers</a>
+            <a class="btn" href="https://www.mjiperfumes.com/fragrance-finder">Find your fragrance</a>
+          </div>
+          <span class="scroll-cue" aria-hidden="true"><span></span>Scroll</span>
+        </div>
+
+        <ol class="reel__captions">
+          <li class="caption" data-stage="glass">
+            <span class="caption__num">01</span>
+            <h2>The glass</h2>
+            <p>Every MJI bottle starts empty, waiting for oud from a single district.</p>
+          </li>
+          <li class="caption" data-stage="fill">
+            <span class="caption__num">02</span>
+            <h2>The pour</h2>
+            <p>Agar oil, steam-distilled in our own plant in Golaghat — slowly, in small batches.</p>
+          </li>
+          <li class="caption" data-stage="seal">
+            <span class="caption__num">03</span>
+            <h2>The seal</h2>
+            <p>Sealed with a QR code that traces the bottle back to its batch and harvest.</p>
+          </li>
+          <li class="caption" data-stage="pack">
+            <span class="caption__num">04</span>
+            <h2>The box</h2>
+            <p>Packed in Assam and on its way to you in 2–3 days.</p>
+          </li>
+        </ol>
+
+        <div class="reel__outro" data-stage="outro">
+          <h2>Your bottle <em>is ready.</em></h2>
+          <div class="reel__ctas">
+            <a class="btn btn--solid" href="#shop">Shop bestsellers</a>
+            <a class="btn" href="https://www.mjiperfumes.com/fragrance-finder">Find your fragrance</a>
+          </div>
+        </div>
+
+        <div class="reel__progress" aria-hidden="true">
+          <span class="reel__track"><span class="reel__fill"></span></span>
+          <ol class="reel__steps">
+            <li class="reel__step" data-step="0">Glass</li>
+            <li class="reel__step" data-step="1">Pour</li>
+            <li class="reel__step" data-step="2">Seal</li>
+            <li class="reel__step" data-step="3">Box</li>
+          </ol>
+        </div>
+
+        <div class="reel__loader" role="status" aria-live="polite">
+          <span class="reel__loader-bar"></span>
+          <span class="reel__loader-text">Loading</span>
+        </div>
+      </div>
+
+      <!-- reduced motion / no JS: a plain hero instead of the animation -->
+      <div class="reel__static">
+        <img src="frames/desktop/frame_0098.webp" alt="A filled MJI perfume bottle with its black and gold cap">
+        <div>
+          <p class="eyebrow">Single-origin oud · Golaghat, Assam</p>
+          <h1>Born in Assam.<br><em>Made for the world.</em></h1>
+          <p class="lede">Grown, distilled and bottled by us.</p>
+          <div class="reel__ctas">
+            <a class="btn btn--solid" href="#shop">Shop bestsellers</a>
+            <a class="btn" href="https://www.mjiperfumes.com/fragrance-finder">Find your fragrance</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. TRUST STRIP ============ -->
+    <ul class="trust" aria-label="Why buy from MJI">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><path d="M14 14h2v2h-2zM18 18h2v2h-2zM14 18h2"/></svg>QR-verified authentic</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Secure Razorpay checkout</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg>Ships in 2–3 days</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M12 4v16"/><circle cx="12" cy="12" r="8"/></svg>Free shipping over ₹1,999</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>WhatsApp support</li>
+    </ul>
+
+    <!-- ============ 3. SHOP BY CATEGORY (one section, real counts) ============ -->
+    <section class="section" aria-labelledby="cat-title">
+      <div class="section__head">
+        <h2 id="cat-title">Shop by category</h2>
+        <a class="link" href="https://www.mjiperfumes.com/products">All 43 products →</a>
+      </div>
+      <ul class="cats">
+        <li>
+          <a class="cat" href="https://www.mjiperfumes.com/products?category=perfumes">
+            <img src="https://www.mjiperfumes.com/_next/image?url=%2Fmedia%2Fcategory%2Fperfumes.jpg&amp;w=1080&amp;q=75" alt="" loading="lazy">
+            <span class="cat__body"><span class="cat__count">16 eau de parfums</span><span class="cat__name">Perfumes</span><span class="cat__from">From ₹400</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="cat" href="https://www.mjiperfumes.com/collections/attar">
+            <img src="https://www.mjiperfumes.com/_next/image?url=%2Fmedia%2Fcategory%2Fattars.jpg&amp;w=1080&amp;q=75" alt="" loading="lazy">
+            <span class="cat__body"><span class="cat__count">22 alcohol-free</span><span class="cat__name">Attars</span><span class="cat__from">From ₹300</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="cat" href="#oud-oil">
+            <img src="https://www.mjiperfumes.com/_next/image?url=%2Fbrand%2Fambient-oud-resin.jpg&amp;w=1080&amp;q=75" alt="" loading="lazy">
+            <span class="cat__body"><span class="cat__count">2 grades</span><span class="cat__name">Pure Oud Oil</span><span class="cat__from">From ₹4,000</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="cat" href="https://www.mjiperfumes.com/collections/bakhoor">
+            <img src="https://www.mjiperfumes.com/_next/image?url=%2Fmedia%2Fcategory%2Fsets.jpg&amp;w=1080&amp;q=75" alt="" loading="lazy">
+            <span class="cat__body"><span class="cat__count">Incense, hampers &amp; sets</span><span class="cat__name">Bakhoor &amp; Gifts</span><span class="cat__from">From ₹1,500</span></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ 4. BESTSELLERS (filter chips, notes, sizes, quick add) ============ -->
+    <section class="section" id="shop" aria-labelledby="best-title">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Loved by the house</p>
+          <h2 id="best-title">Bestsellers</h2>
+        </div>
+        <div class="chips" role="group" aria-label="Filter bestsellers">
+          <button class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="perfume" aria-pressed="false">Perfumes</button>
+          <button class="chip" data-filter="attar" aria-pressed="false">Attars</button>
+          <button class="chip" data-filter="oil" aria-pressed="false">Oud oil</button>
+          <button class="chip" data-filter="bakhoor" aria-pressed="false">Bakhoor</button>
+        </div>
+      </div>
+
+      <ul class="products" id="products"><!-- filled from PRODUCTS in main.js --></ul>
+    </section>
+
+    <!-- ============ 5. DISCOVERY SET (proposed product, light section) ============ -->
+    <section class="section section--light discovery" id="discovery" aria-labelledby="disc-title">
+      <div class="discovery__img">
+        <img src="https://www.mjiperfumes.com/_next/image?url=%2Fbrand%2Feditorial-silk-gold.jpg&amp;w=1080&amp;q=75" alt="" loading="lazy">
+      </div>
+      <div class="discovery__body">
+        <p class="eyebrow">New here? Start small <span class="tag">Proposed product</span></p>
+        <h2 id="disc-title">The Discovery Set</h2>
+        <p>Five 2&nbsp;ml vials of our bestsellers — Oudh Assamica, Ethereal Love, Woody Oudh, Sweet Sensation and Attar Royal. Wear each for a day, then choose your bottle.</p>
+        <ul class="ticks">
+          <li>Price comes back as credit on your first full bottle</li>
+          <li>Fits in a pocket, ships free with any order</li>
+          <li>Every vial QR-traceable to its batch</li>
+        </ul>
+        <div class="discovery__buy">
+          <span class="price">₹699</span>
+          <button class="btn btn--dark" data-add='{"name":"Discovery Set","size":"5 × 2 ml","price":699}'>Add to bag</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. PURE OUD OIL GRADES ============ -->
+    <section class="section oil" id="oud-oil" aria-labelledby="oil-title">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Our rarest distillations</p>
+          <h2 id="oil-title">Pure Assam agar oil, graded</h2>
+        </div>
+        <p class="section__sub">Undiluted oud oil straight from our Golaghat stills. A single drop is enough; Super AAA is our aged oud, the richest oil we make.</p>
+      </div>
+      <div class="grades">
+        <article class="grade">
+          <p class="grade__label">Grade</p>
+          <h3>Super</h3>
+          <p class="notes">Woody · Smoky · Oud</p>
+          <dl class="grade__sizes">
+            <div><dt>3 ml</dt><dd>₹4,000</dd></div>
+            <div><dt>6 ml</dt><dd>₹8,000</dd></div>
+            <div><dt>12 ml</dt><dd>₹15,000</dd></div>
+          </dl>
+          <a class="btn" href="https://www.mjiperfumes.com/products/attar-agar-oil-super">View Super</a>
+        </article>
+        <article class="grade grade--top">
+          <p class="grade__label">Highest grade</p>
+          <h3>Super AAA</h3>
+          <p class="notes">Woody · Smoky · Aged oud</p>
+          <dl class="grade__sizes">
+            <div><dt>3 ml</dt><dd>₹6,000</dd></div>
+            <div><dt>6 ml</dt><dd>₹12,000</dd></div>
+            <div><dt>12 ml</dt><dd>₹22,000</dd></div>
+          </dl>
+          <a class="btn btn--solid" href="https://www.mjiperfumes.com/products/attar-agar-oil-super-aaa">View Super AAA</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 7. ONE STORY SECTION (was told three times) ============ -->
+    <section class="section story" aria-labelledby="story-title">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">One district · one house</p>
+          <h2 id="story-title">From the tree to your skin</h2>
+        </div>
+        <a class="link" href="https://www.mjiperfumes.com/our-story">Read our story →</a>
+      </div>
+      <ol class="steps">
+        <li><img src="https://www.mjiperfumes.com/_next/image?url=%2Fprocess%2Fnursery.jpeg&amp;w=1080&amp;q=75" alt="" loading="lazy"><span>01</span><h3>Nursery</h3><p>We propagate our own agarwood saplings.</p></li>
+        <li><img src="https://www.mjiperfumes.com/_next/image?url=%2Fprocess%2Fplantation.jpeg&amp;w=1080&amp;q=75" alt="" loading="lazy"><span>02</span><h3>Plantation</h3><p>Grown in Golaghat, Assam's ODOP district for agarwood.</p></li>
+        <li><img src="https://www.mjiperfumes.com/_next/image?url=%2Fprocess%2Fdistillation.jpeg&amp;w=1080&amp;q=75" alt="" loading="lazy"><span>03</span><h3>Distillation</h3><p>Agar oil distilled in our own plant, over slow heat.</p></li>
+        <li><img src="https://www.mjiperfumes.com/_next/image?url=%2Fprocess%2Fbottle.jpeg&amp;w=1080&amp;q=75" alt="" loading="lazy"><span>04</span><h3>Bottle</h3><p>Blended, bottled and sealed in-house.</p></li>
+      </ol>
+      <dl class="stats">
+        <div><dt>112 kg</dt><dd>Assam's first legally approved agarwood export, flagged off 13 May 2026</dd></div>
+        <div><dt>1 district</dt><dd>Every step from sapling to bottle happens in Golaghat</dd></div>
+        <div><dt>0% alcohol</dt><dd>in every attar — oil on skin, nothing added</dd></div>
+      </dl>
+    </section>
+
+    <!-- ============ 8. VERIFY YOUR BOTTLE (light section) ============ -->
+    <section class="section section--light verify" aria-labelledby="verify-title">
+      <div class="verify__card" aria-hidden="true">
+        <span class="verify__qr"></span>
+        <span class="verify__code">MJI-2026-0042</span>
+        <span class="verify__row"><b>Plantation</b> Golaghat, Assam</span>
+        <span class="verify__row"><b>Harvest &amp; distillation</b> dates per batch</span>
+        <span class="verify__row"><b>Permit</b> CITES</span>
+      </div>
+      <div>
+        <p class="eyebrow">Traceable, not just described</p>
+        <h2 id="verify-title">Scan it. See where it grew.</h2>
+        <p>Every bottle carries a QR code tied to the batch it was distilled from — the plantation, the harvest and distillation dates, and the permit the oud cleared under.</p>
+        <a class="btn btn--dark" href="https://www.mjiperfumes.com/verify">Verify a bottle</a>
+      </div>
+    </section>
+
+    <!-- ============ 9. LAYERING RITUAL (cross-sell) ============ -->
+    <section class="section ritual" aria-labelledby="ritual-title">
+      <img class="ritual__bg" src="https://www.mjiperfumes.com/_next/image?url=%2Fbrand%2Fhero-oud-smoke.jpg&amp;w=1080&amp;q=75" alt="" loading="lazy">
+      <div class="ritual__body">
+        <p class="eyebrow">The Assam way</p>
+        <h2 id="ritual-title">Layer it with bakhoor</h2>
+        <ol class="ritual__steps">
+          <li>Light a chip over charcoal and let the smoke rise.</li>
+          <li>Pass your garment through it — collar, cuffs, scarf.</li>
+          <li>Wear the perfume over the smoked fabric. The oud meets its own smoke.</li>
+        </ol>
+        <div class="ritual__pair">
+          <span>Oudh Assamica 50 ml + Bakhoor Set</span>
+          <span class="price">₹4,000</span>
+          <button class="btn btn--solid" data-add='{"name":"Oudh Assamica + Bakhoor Set","size":"50 ml + set","price":4000}'>Add the pair</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. FRAGRANCE FINDER ============ -->
+    <section class="finder" aria-labelledby="finder-title">
+      <div>
+        <h2 id="finder-title">Which oud is yours?</h2>
+        <p>Four questions — how you wear it, when, and what it should say. We match your answers against every note pyramid in the house.</p>
+      </div>
+      <a class="btn btn--solid" href="https://www.mjiperfumes.com/fragrance-finder">Take the 1-minute quiz</a>
+    </section>
+
+    <!-- ============ 11. REVIEWS (layout only - needs real reviews) ============ -->
+    <section class="section reviews" aria-labelledby="rev-title">
+      <div class="section__head">
+        <h2 id="rev-title">What customers say</h2>
+        <span class="tag tag--dark">Layout only · connect real reviews</span>
+      </div>
+      <ul class="reviews__list">
+        <li class="review review--empty"><span class="stars" aria-hidden="true">★★★★★</span><p>Verified customer review goes here — collected by a post-delivery email or WhatsApp message.</p><span class="review__who">Name · City · Product</span></li>
+        <li class="review review--empty"><span class="stars" aria-hidden="true">★★★★★</span><p>Show 3 recent reviews with the product they bought, linked to that product.</p><span class="review__who">Name · City · Product</span></li>
+        <li class="review review--empty"><span class="stars" aria-hidden="true">★★★★★</span><p>Average rating and review count also appear on product cards once collected.</p><span class="review__who">Name · City · Product</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="https://www.mjiperfumes.com/_next/image?url=%2Fbrand%2FScreenshot_2024-02-20_at_4.22.27_PM-removebg-preview.png&amp;w=1080&amp;q=75" alt="MJI Perfumes" width="120" height="40" loading="lazy">
+      <p>Single-origin oud from Golaghat, Assam. Grown, distilled and bottled by us.</p>
+    </div>
+    <nav aria-label="Shop">
+      <h3>Shop</h3>
+      <a href="https://www.mjiperfumes.com/products?category=perfumes">Perfumes</a>
+      <a href="https://www.mjiperfumes.com/collections/attar">Attars</a>
+      <a href="#oud-oil">Oud oil</a>
+      <a href="https://www.mjiperfumes.com/collections/bakhoor">Bakhoor &amp; gifts</a>
+    </nav>
+    <nav aria-label="The house">
+      <h3>The house</h3>
+      <a href="https://www.mjiperfumes.com/our-story">Our story</a>
+      <a href="https://www.mjiperfumes.com/agarwood">Assam agarwood</a>
+      <a href="https://www.mjiperfumes.com/process">Process</a>
+      <a href="https://www.mjiperfumes.com/export">Export &amp; trade</a>
+    </nav>
+    <nav aria-label="Help">
+      <h3>Help</h3>
+      <a href="https://www.mjiperfumes.com/track">Track order</a>
+      <a href="https://www.mjiperfumes.com/shipping-returns">Shipping &amp; returns</a>
+      <a href="https://www.mjiperfumes.com/faq">FAQ</a>
+      <a href="https://www.mjiperfumes.com/contact">Contact</a>
+    </nav>
+    <p class="footer__note">Redesign prototype for mjiperfumes.com — scroll animation uses draft renders.</p>
+  </footer>
+
+  <!-- floating WhatsApp (kept from the live site) -->
+  <a class="whatsapp" href="https://www.mjiperfumes.com/contact" aria-label="WhatsApp support">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 2.5 2 4.5 4.5 4.5l1-1.2 1.8.8"/></svg>
+  </a>
+
+  <!-- mini bag toast: shows free-shipping progress after every add -->
+  <div class="toast" role="status" aria-live="polite" hidden>
+    <p class="toast__title"></p>
+    <div class="toast__ship">
+      <span class="toast__bar"><span></span></span>
+      <span class="toast__text"></span>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
