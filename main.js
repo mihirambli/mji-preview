@@ -10,7 +10,8 @@
 
   const SITE = "https://www.mjiperfumes.com";
   const FREE_SHIPPING_AT = 1999;
-  const img = (path, w = 640) => `${SITE}/_next/image?url=${encodeURIComponent(path)}&w=${w}&q=75`;
+  // product photos are local copies of the live site's images (img/<same path>.avif)
+  const img = (path) => "img" + path.replace(/\.(jpe?g|png)$/, ".avif");
   const inr = (n) => "₹" + n.toLocaleString("en-IN");
 
   // ------------------------------------------------------------------------
@@ -109,7 +110,7 @@
     const url = `${SITE}/products/${p.slug}`;
     li.innerHTML = `
       <a class="product__img" href="${url}">
-        <img src="${img(p.img)}" alt="${p.name}" loading="lazy">
+        <img src="${img(p.img)}" alt="${p.name}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'product__ph',textContent:'MJI'}))">
         ${p.badge ? `<span class="product__badge">${p.badge}</span>` : ""}
       </a>
       <p class="product__type">${p.label}</p>

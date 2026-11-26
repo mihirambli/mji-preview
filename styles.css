@@ -237,6 +237,12 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .product__img { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; background: var(--bg-2); margin-bottom: 16px; }
 .product__img img { width: 100%; height: 100%; object-fit: cover; filter: brightness(1.18) contrast(1.04); transition: transform 0.9s var(--ease); }
 .product:hover .product__img img { transform: scale(1.05); }
+/* shown when a product photo is missing (no local copy yet) */
+.product__ph {
+  display: grid; place-items: center; width: 100%; height: 100%;
+  background: radial-gradient(circle at 50% 40%, rgba(212, 172, 110, 0.14), transparent 65%), var(--bg-2);
+  font-family: "Fraunces", serif; font-size: 34px; letter-spacing: 0.18em; color: var(--gold);
+}
 .product__badge {
   position: absolute; left: 12px; top: 12px; padding: 5px 10px;
   background: rgba(11, 8, 6, 0.78); backdrop-filter: blur(6px);
